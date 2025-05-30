@@ -33,8 +33,9 @@ public class pitcher : MonoBehaviour
 
     void Spawnball()
     {
-        Vector3 spawnPosition = new Vector3(0, 1, -8); // 在 (0,1,0) 的位置生成
-        Quaternion spawnRotation = Quaternion.identity; // 無旋轉
+        Vector3 spawnPosition = new Vector3(-0.53f, 2.0f, -4.52f); // 在 (0,1,0) 的位置生成
+        Quaternion spawnRotation = Quaternion.Euler(0, 90, 0);  // 無旋轉
+        
         Instantiate(baseball, spawnPosition, spawnRotation);
     }
 }
